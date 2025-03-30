@@ -64,3 +64,65 @@ section[epub|type~="z3998:scene"] > p{
 	margin: 1em auto;
 	width: 75%;
 }
+
+tr.together{
+    break-inside: avoid;
+}
+
+tr.together td{
+    padding: 0 .5em 0 0;
+    vertical-align: middle;
+}
+
+tr.together td:only-child,
+tr.together td + td{
+    border-left: 1px solid;
+}
+
+.together + .together td[rowspan],
+.together + .together td[rowspan] + td{
+    padding-top: .5em;
+}
+
+[epub|type~="z3998:drama"] .together td:last-child{
+    padding-left: .5em;
+}
+
+footer{
+    margin-top: 1em;
+    text-align: right;
+}
+
+[epub|type~="z3998:signature"]{
+    font-variant: small-caps;
+}
+
+[epub|type~="z3998:poem"] p{
+    text-align: initial;
+    text-indent: 0;
+}
+
+[epub|type~="z3998:poem"] p > span{
+    display: block;
+    padding-left: 1em;
+    text-indent: -1em;
+}
+
+[epub|type~="z3998:poem"] p > span + br{
+    display: none;
+}
+
+[epub|type~="z3998:poem"] p + p{
+    margin-top: 1em;
+}
+
+p span.i1{
+    padding-left: 2em;
+    text-indent: -1em;
+}
+
+p span.i2{
+    padding-left: 3em;
+    text-indent: -1em;
+}
+
