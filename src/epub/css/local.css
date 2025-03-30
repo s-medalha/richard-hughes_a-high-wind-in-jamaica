@@ -66,63 +66,62 @@ section[epub|type~="z3998:scene"] > p{
 }
 
 tr.together{
-    break-inside: avoid;
+	break-inside: avoid;
 }
 
 tr.together td{
-    padding: 0 .5em 0 0;
-    vertical-align: middle;
+	padding: 0 .5em 0 0;
+	vertical-align: middle;
 }
 
 tr.together td:only-child,
 tr.together td + td{
-    border-left: 1px solid;
+	border-left: 1px solid;
 }
 
 .together + .together td[rowspan],
 .together + .together td[rowspan] + td{
-    padding-top: .5em;
+	padding-top: .5em;
 }
 
 [epub|type~="z3998:drama"] .together td:last-child{
-    padding-left: .5em;
+	padding-left: .5em;
 }
 
 footer{
-    margin-top: 1em;
-    text-align: right;
+	margin-top: 1em;
+	text-align: right;
 }
 
 [epub|type~="z3998:signature"]{
-    font-variant: small-caps;
+	font-variant: small-caps;
 }
 
 [epub|type~="z3998:poem"] p{
-    text-align: initial;
-    text-indent: 0;
+	text-align: initial;
+	text-indent: 0;
 }
 
 [epub|type~="z3998:poem"] p > span{
-    display: block;
-    padding-left: 1em;
-    text-indent: -1em;
+	display: block;
+	padding-left: 1em;
+	text-indent: -1em;
 }
 
 [epub|type~="z3998:poem"] p > span + br{
-    display: none;
+	display: none;
 }
 
 [epub|type~="z3998:poem"] p + p{
-    margin-top: 1em;
+	margin-top: 1em;
 }
 
 p span.i1{
-    padding-left: 2em;
-    text-indent: -1em;
+	padding-left: 2em;
+	text-indent: -1em;
 }
 
 p span.i2{
-    padding-left: 3em;
-    text-indent: -1em;
+	padding-left: 3em;
+	text-indent: -1em;
 }
-
